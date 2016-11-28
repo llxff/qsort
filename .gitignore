@@ -2,3 +2,4 @@ bin/
 .idea
 CMakeLists.txt
 cmake-build-debug
+.DS_Store
