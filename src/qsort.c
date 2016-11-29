@@ -44,7 +44,7 @@ void _quick_sort(int * array, int from, int to) {
 int random_between(int lo, int hi) {
   struct timespec ts;
 
-  timespec_get(&ts, TIME_UTC);
+  timespec_get(&ts, 1);
   srandom(ts.tv_nsec ^ ts.tv_sec);
 
   return ((random() % (hi-lo+1)) + lo);
