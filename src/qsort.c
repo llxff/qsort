@@ -20,7 +20,7 @@ void print_counters() {
 }
 
 void _quick_sort(int * array, int from, int to) {
-  int basic_index = _random_between(from, to);
+  int basic_index = random_between(from, to);
   int basic = array[basic_index];
 
   int f = from, t = to;
@@ -37,16 +37,17 @@ void _quick_sort(int * array, int from, int to) {
     }
   } while (f < t);
 
-
   if (from < t) _quick_sort(array, from, t);
   if (f < to) _quick_sort(array, f, to);
 }
 
-int _random_between(int lo, int hi) {
-  time_t t;
-  srand((unsigned) time(&t));
+int random_between(int lo, int hi) {
+  struct timespec ts;
 
-  return ((rand() % (hi-lo+1)) + lo);
+  timespec_get(&ts, TIME_UTC);
+  srandom(ts.tv_nsec ^ ts.tv_sec);
+
+  return ((random() % (hi-lo+1)) + lo);
 }
 
 void _swap(int * array, int i1, int i2) {
@@ -57,5 +58,3 @@ void _swap(int * array, int i1, int i2) {
 
   swap_amount++;
 }
-
-

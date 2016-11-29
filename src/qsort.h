@@ -5,11 +5,13 @@
 
 void quick_sort(int array[], int count);
 
+int random_between(int lo, int hi);
+
 void print_counters();
 
 void _quick_sort(int * array, int from, int to);
 
-int _random_between(int lo, int hi);
+int random_between(int lo, int hi);
 
 void _swap(int * array, int i1, int i2);
 
