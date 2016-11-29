@@ -10,8 +10,9 @@ void inspect(int * array, int count) {
   else
   {
     printf("[");
+    int i;
 
-    for(int i = 0; i < count; i++) {
+    for(i = 0; i < count; i++) {
       printf("%d", array[i]);
 
       if(i != count - 1) {
@@ -31,9 +32,9 @@ int main(int argc, char *argv[])
   int count;
   scanf("%d", &count);
 
-  int array[count];
+  int array[count], i;
 
-  for(int i = 0; i < count; i++) {
+  for(i = 0; i < count; i++) {
     array[i] = random_between(-500000, 500000);
   }
 

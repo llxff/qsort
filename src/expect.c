@@ -19,7 +19,9 @@ void _expect_true(char caption[], int condition, int line) {
 }
 
 void _match_array(char caption[], int expected[], int actual[], int count, int line) {
-  for(int i = 0; i < count; i++) {
+  int i;
+  
+  for(i = 0; i < count; i++) {
     if(expected[i] != actual[i]) {
       _expect_true(caption, 0, line);
       return;
