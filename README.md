@@ -44,4 +44,4 @@
 
 ### Демонстрация запуска тестов
 
-[![asciicast](https://asciinema.org/a/a2b89lb2utzffpch05a9qct9y.png)]https://asciinema.org/a/a2b89lb2utzffpch05a9qct9y)
+[![asciicast](https://asciinema.org/a/a2b89lb2utzffpch05a9qct9y.png)](https://asciinema.org/a/a2b89lb2utzffpch05a9qct9y)
