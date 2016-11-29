@@ -1,7 +1,5 @@
 # Контрольная работа 1
 
-[![Build Status](https://travis-ci.org/llxff/qsort.svg?branch=master)](https://travis-ci.org/llxff/qsort)
-
 Разработать программу, реализующую улучшенный метод сортировки массивов - метод быстрой сортировки.
 
 ### Описание задачи
